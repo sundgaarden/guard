@@ -7,8 +7,8 @@ $req_img_width=300;
 $req_img_height=250;
 
 if (!class_exists('S3')) require_once 'S3.php';
-if (!defined('awsAccessKey')) define('awsAccessKey', 'AKIAJFG2OC6IPOIWHXCA');
-if (!defined('awsSecretKey')) define('awsSecretKey', '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');
+if (!defined('awsAccessKey')) define('awsAccessKey', '');
+if (!defined('awsSecretKey')) define('awsSecretKey', '');
 
 $s3 			= new S3(awsAccessKey, awsSecretKey);
 $bucketName 	= "theguardian-rss-dev";
